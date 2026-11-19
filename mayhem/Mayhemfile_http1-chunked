@@ -1,0 +1,10 @@
+project: savantenvs/squid
+target: http1-chunked
+
+cmds:
+  - cmd: /mayhem/mayhem/fuzz_http1_chunked
+    libfuzzer: true
+    timeout: 5
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/http1-chunked/testsuite

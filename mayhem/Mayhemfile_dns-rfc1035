@@ -1,0 +1,10 @@
+project: savantenvs/squid
+target: dns-rfc1035
+
+cmds:
+  - cmd: /mayhem/mayhem/fuzz_dns_rfc1035
+    libfuzzer: true
+    timeout: 5
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/dns-rfc1035/testsuite

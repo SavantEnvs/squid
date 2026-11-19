@@ -1,0 +1,10 @@
+project: savantenvs/squid
+target: proxy-protocol
+
+cmds:
+  - cmd: /mayhem/mayhem/fuzz_proxy_protocol
+    libfuzzer: true
+    timeout: 5
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/proxy-protocol/testsuite

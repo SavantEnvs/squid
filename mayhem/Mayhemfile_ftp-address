@@ -1,0 +1,10 @@
+project: savantenvs/squid
+target: ftp-address
+
+cmds:
+  - cmd: /mayhem/mayhem/fuzz_ftp_address
+    libfuzzer: true
+    timeout: 5
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ftp-address/testsuite

@@ -1,0 +1,9 @@
+project: savantenvs/squid
+target: squid-conf
+
+cmds:
+  - cmd: /mayhem/mayhem/squid-fuzz -k parse -f @@
+    timeout: 10
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/squid-conf/testsuite

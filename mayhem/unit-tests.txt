@@ -1,0 +1,12 @@
+tests/testHttp1Parser
+tests/testHttpRange
+tests/testURL
+tests/testHttpReply
+tests/testDns
+tests/testIpAddress
+tests/testHttpRequest
+tests/testSBuf
+tests/testConfigParser
+tests/testString
+tests/testTokenizer
+tests/testCharacterSet

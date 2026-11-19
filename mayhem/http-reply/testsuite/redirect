@@ -1,0 +1,5 @@
+HTTP/1.0 302 Found
+Location: http://a/
+Set-Cookie: a=b
+Transfer-Encoding: chunked
+

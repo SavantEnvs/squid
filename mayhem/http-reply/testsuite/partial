@@ -1,0 +1,7 @@
+HTTP/1.1 206 Partial Content
+Content-Range: bytes 0-99/1000
+Content-Length: 100
+Cache-Control: max-age=60, private="x"
+Surrogate-Control: max-age=10;dev
+ETag: "abc"
+

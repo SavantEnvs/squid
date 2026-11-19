@@ -1,0 +1,10 @@
+project: savantenvs/squid
+target: tls-handshake
+
+cmds:
+  - cmd: /mayhem/mayhem/fuzz_tls_handshake
+    libfuzzer: true
+    timeout: 5
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/tls-handshake/testsuite

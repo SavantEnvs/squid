@@ -1,0 +1,4 @@
+build-fuzz/
+build-test/
+/fuzz_*
+/squid-fuzz
